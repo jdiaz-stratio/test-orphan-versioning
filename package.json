@@ -1,0 +1,41 @@
+{
+    "name": "material-card-element",
+    "version": "1.0.0",
+    "description": "Demo for a material design custom element built using lit-element and TypeScript",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p src",
+        "bundle": "rollup -c",
+        "lint": "eslint src/**/*.ts --fix",
+        "start": "browser-sync start -s . -f 'dist/**/*.js'",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "npm run build; npm-watch; tsc -p src -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drochgenius/material-card-element.git"
+    },
+    "author": "Dominique Rochefort",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/drochgenius/material-card-element/issues"
+    },
+    "homepage": "https://github.com/drochgenius/material-card-element#readme",
+    "dependencies": {
+        "@material/card": "^1.1.1",
+        "lit-element": "^2.1.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^1.6.0",
+        "@typescript-eslint/parser": "^1.6.0",
+        "browser-sync": "^2.26.3",
+        "eslint": "^5.16.0",
+        "npm-watch": "^0.6.0",
+        "rollup": "^1.10.1",
+        "rollup-plugin-node-resolve": "^4.2.3",
+        "typescript": "^3.4.4"
+    },
+    "watch": {
+        "bundle": "dist/components/*.js"
+    }
+}
